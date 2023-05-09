@@ -1,4 +1,4 @@
-#100 Days of Code (Python)
+#100 Days of Code (Python)#
 
 :joy: 100 days, 1 hour per day, with 1 project per day, to master Python. :joy:
 
