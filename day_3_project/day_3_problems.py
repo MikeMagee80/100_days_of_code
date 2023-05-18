@@ -55,7 +55,25 @@ year = int(input("Which year do you want to check? "))
 # Write your code below this line 👇
 
 
-if year % 4 == 0 and year % 100 == 0 and (year % 400 == 0):
-    print("Leap year.")
-else:
-    print("Not leap year.")
+# def is_leap_year(year):
+#     if year % 4 == 0:
+#         if year % 100 == 0:
+#             if year % 400 == 0:
+#                 return True  # Divisible by 400, so it's a leap year
+#             else:
+#                 return False  # Divisible by 100 but not 400, not a leap year
+#         else:
+#             return True  # Divisible by 4 but not 100, so it's a leap year
+#     else:
+#         return False  # Not divisible by 4, not a leap year
+
+# # Prompt the user for input
+
+
+# # Call the function and display the result
+# if is_leap_year(year):
+#     print(year, "is a leap year.")
+# else:
+#     print(year, "is not a leap year.")
+
+# ==============================
