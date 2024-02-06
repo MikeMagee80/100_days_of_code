@@ -11,6 +11,8 @@
 
 # # e.g. 1 means Heads 0 means Tails
 
+# import random
+
 # random_side = random.randint(0, 1)
 
 # if random_side == 1:
@@ -18,7 +20,6 @@
 # else:
 #     print('Tails')
 
-# import random
 
 # random_side = random.randint(0, 1)
 # if random_side == 1:
