@@ -54,7 +54,7 @@
 # def multiply(x, y):
 #     return x * y
 
-#VARIABLE NUMBER OF ARGUMENTS IN A FUNCTION
+#VARIABLE NUMBER OF ARGUMENTS IN A FUNCTION   Xargs and XXargs
 
 # def multiply(*numbers):   # xarg
 #     total = 1
@@ -68,10 +68,51 @@
 
 #--------------------------
 
-def save_user(**user):
-    print(user)
+# def save_user(**user):    # ** allows the passing of multiple keyword arguments
+#     print(user)  # can also use print(user["name"]) etc
 
-save_user(id=1, name="john", age=22)
+# save_user(id=1, name="john", age=22)
 
-Output:
-{'id': 1, 'name': 'john', 'age': 22}
+# Output:
+# {'id': 1, 'name': 'john', 'age': 22}
+
+
+#------------------------------
+
+# Scope refers to the region of the code where the variable is defined
+# Global versus Local
+
+# local variables in different functions can have the same name
+
+#-------------------------------
+
+# Exercise
+
+#takes an input. If input is divisible by 3, returns "fizz". If divisible by 5, returns "buzz".  If divisible by both, return "fizzbuzz".
+
+# def fizz_buzz(input):
+
+#     if input % 3 == 0 and input % 5 != 0:
+#         print("Fizz")
+#     elif input % 5 == 0 and input % 3 != 0: 
+#         print("Buzz")
+#     elif input % 3 == 0 and input % 5 == 0:
+#         print("Fizbuzz!!!")
+#     else:
+#         print(f"{input}")
+
+# fizz_buzz(15)
+# WORKS!
+
+
+# def fizz_buzz(input):
+#     if (input % 3 == 0) and (input % 5 == 0):
+#         return "FizzBuzz!!"
+#     if input % 3 == 0:
+#         return "Fizz"
+#     if input % 5 == 0:
+#         return "Buzz"
+#     return input
+
+# print(fizz_buzz(15))
+# WORKS!!!
