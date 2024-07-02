@@ -167,4 +167,45 @@
 
 #----------------------
 
+# Sorting lists
+
+# numbers = [3, 51, 2, 8, 6]
+# numbers.sort()   # sorts list in ascending order (modifying original list)
+# print(numbers)
+
+# output:
+# [2, 3, 6, 8, 51]
+
+# numbers = [3, 51, 2, 8, 6]
+# numbers.sort(reverse=True)  # sorts list in descending order
+# print(numbers)
+
+# numbers = [3, 51, 2, 8, 6]
+# # numbers.sort()
+# print(sorted(numbers))  # returns new list that is sorted
+# # print(sorted(numbers, reverse=True)) 
+# print(numbers)
+
+# output:
+# [2, 3, 6, 8, 51]
+# [3, 51, 2, 8, 6]
+
+
+
+# items = [   # list of tuples
+#     ("Product1", 10),
+#     ("Product2", 9),
+#     ("Product3", 12)
+# ]
+
+# def sort_item(item):
+#     return item[1]
+
+# items.sort(key=sort_item)
+# print(items)
+
+# output:
+# [('Product2', 9), ('Product1', 10), ('Product3', 12)]  (sorted by price)
+
+#-------------------------------
 
