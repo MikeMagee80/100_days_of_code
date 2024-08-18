@@ -221,16 +221,182 @@
 
 # Inheritance
 
-class Animal:
+# class Animal:
+#     def __init__(self):
+#         self.age = 1    
+
+#     def eat(self):
+#         print("eat")
 
 
-class Mammal:
-    def eat(self):
-        print("eat")
+# #Animal: Parent, Base
+# #Mammal: Child, Sub
 
-    def walk(self):
-        print("walk")
+# class Mammal(Animal):
+#     def walk(self):
+#         print("walk")
 
-class Fish:
-    def eat(self):
-        print("eat")
+
+# class Fish(Animal):
+#     def swim(self):
+#         print("swim")
+
+# m = Mammal()
+# m.eat()
+# print(m.age)
+
+
+
+#-----------------
+
+# Object class
+
+# class Animal:
+#     def __init__(self):
+#         self.age = 1    
+
+#     def eat(self):
+#         print("eat")
+
+
+# #Animal: Parent, Base
+# #Mammal: Child, Sub
+
+# class Mammal(Animal):
+#     def walk(self):
+#         print("walk")
+
+
+# class Fish(Animal):
+#     def swim(self):
+#         print("swim")
+
+# m = Mammal()
+# print(isinstance(m, object))
+
+#------------------
+
+# Method Overriding
+
+# class Animal:
+#     def __init__(self):
+#         print("Animal Constructor")
+#         self.age = 1    
+
+#     def eat(self):
+#         print("eat")
+
+
+# #Animal: Parent, Base
+# #Mammal: Child, Sub
+
+# class Mammal(Animal):
+#     def __init__(self):
+#         print("Mammal Constructor")
+#         self.weight = 2
+#         super().__init__()
+
+#     def walk(self):
+#         print("walk")
+
+
+# class Fish(Animal):
+#     def swim(self):
+#         print("swim")
+
+# m = Mammal()
+# print(m.age)
+# print(m.weight)
+
+#-------------------------
+
+# class InvalidOperationError(Exception):
+#     pass
+
+# class Stream:
+#     def __init__(self):
+#         self.opened = False
+
+#     def open(self):
+#         if self.opened:
+#             raise InvalidOperationError("Stream is already open")
+#         self.opened = True
+
+#     def close(self):
+#         if not self.opened:
+#             raise InvalidOperationError("Stream is already closed")
+#         self.opened = False
+
+# class FileStream(Stream):
+#     def read(self):
+#         print("Reading data from a file")
+
+
+# class NetworkStream(Stream):
+#     def read(self):
+#         print("Reading data from a network")
+
+
+#-----------------------------
+
+# Abstract Base Classes
+
+# from abc import ABC, abstractmethod 
+
+# class InvalidOperationError(Exception):
+#     pass
+
+# class Stream(ABC):
+#     def __init__(self):
+#         self.opened = False
+
+#     def open(self):
+#         if self.opened:
+#             raise InvalidOperationError("Stream is already open")
+#         self.opened = True
+
+#     def close(self):
+#         if not self.opened:
+#             raise InvalidOperationError("Stream is already closed")
+#         self.opened = False
+
+#     @abstractmethod
+#     def read(self):
+#         pass
+
+# class FileStream(Stream):
+#     def read(self):
+#         print("Reading data from a file")
+
+
+# class NetworkStream(Stream):
+#     def read(self):
+#         print("Reading data from a stream")
+
+# class MemoryStream(Stream):
+#     def read(self):
+#         print("Reading data from a memory stream")
+
+# stream = MemoryStream()
+# stream.open()
+
+#------------------------
+
+# Data classes
+
+# # class Point:
+# #     def __init__(self, x, y):
+# #         self.x = x
+# #         self.y = y
+
+# #     def __eq__(self, other):
+# #         return self.x == other.x and self.y == other.y
+
+# from collections import namedtuple
+
+# Point = namedtuple("Point", ["x", "y"])
+
+# p1 = Point(x=1, y=2)
+# print(p1.x)
+# p2 = Point(1, 2)
+# print(p1 == p2)
