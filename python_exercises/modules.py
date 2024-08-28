@@ -22,3 +22,13 @@
 # import sales
 
 # sales.calc_shipping()
+
+# Package: a container for one or more modules (plus __init__.py)
+# import ecommerce.sales (where ecommerce is the folder/package holding the sales module)
+# ecommerce.sales.calc_tx()
+
+# # or
+# from ecommerce.sales import calc_tax
+
+
+# from ..customer import contact
